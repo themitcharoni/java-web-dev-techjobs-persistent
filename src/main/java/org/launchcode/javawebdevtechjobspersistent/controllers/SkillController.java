@@ -31,8 +31,8 @@ public class SkillController {
 
     @GetMapping("add")
     public String displayAddSkillForm(Model model) {
-        model.addAttribute("employers", employerRepository.findAll());
-        model.addAttribute(new Employer());
+//        model.addAttribute("employers", employerRepository.findAll());
+//        model.addAttribute(new Employer());
         model.addAttribute(new Skill());
         return "skills/add";
     }
